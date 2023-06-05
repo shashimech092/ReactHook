@@ -6,7 +6,7 @@ const Display=(props)=>{
         if(myData){
             return myData.map((data)=>{
                 return (
-                    <div>
+                    <div key={data.restaurant_id}>
                         <p>{data.restaurant_name} | {data.address}</p>
                     </div>
                 )

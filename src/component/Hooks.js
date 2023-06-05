@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Display from "./Display";
+import ContextComponent from "./contextapi";
+
 
 const url='http://3.17.216.66:4000/restaurant?mealtype_id='
 const Hooks=()=>{
@@ -24,6 +26,7 @@ const Hooks=()=>{
     return(
         <>
         <h1>{title}</h1>
+        <ContextComponent/>
         <h1>{count}</h1>
         <button onClick={Update}>Counter</button>
         <h1>{count1}</h1>
